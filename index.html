@@ -1,87 +1,290 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
-    <link rel="stylesheet" href="index.css">
-    <!-- font awesome CDN -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Joram Mwanyika - Customer Service & Automation Specialist</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="navbar">
-              <a href="index.html"><h4>Joram's Portfolio</h4></a>
-              <ul class="nav__menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="project.html">Projects</a></li>
-              </ul>
-            </div>
-          </nav>
-    </header>
-
-    <main>
-        <div class="brief-intro">
-            <div class="item-1">
-                <h1>Joram Nyamawi Mwanyika</h1>
-            </div>
-            <div class="item-2">
-                <img src="IMG_9621.jpg" width="300" alt="Joram">
-            </div>
-            <div class="item-3">
-                <p class="details">I streamline business operations using no-code/low-code automation tools like Airtable, Zapier, and Make (formerly Integromat). Collaborating with diverse teams, I tailor automated processes to meet their unique needs through effective communication and teamwork.
-                    With technical expertise in HTML, CSS, JavaScript, Python (OOP), Flask, Excel, SQLAlchemy, and SQLite3, I ensure projects are efficient, accurate, and secure. My strong problem-solving, leadership, adaptability, and attention to detail further contribute to the successful and timely completion of projects.</p>
-            </div>
-        </div>
-    </main>
-
-    <footer>
-        <div class="contact-container">
-            <div class="footer_1">
-                <div class="contact-item">
-                    <div class="icon">
-                        <i class="fas fa-map-marker-alt"></i> Location
+<body class="bg-gray-950 text-gray-100">
+    <div class="min-h-screen">
+        <header class="bg-gradient-to-b from-purple-900 to-gray-950 py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="space-y-6">
+                        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Hi, I'm Joram Mwanyika</h1>
+                        <p class="text-xl md:text-2xl text-purple-200">Customer Service & Automation Specialist</p>
+                        <p class="text-lg text-gray-300 max-w-lg">
+                            Streamlining business operations with no-code/low-code automation tools and technical expertise
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#projects" class="inline-flex items-center justify-center rounded-md bg-purple-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-purple-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+                                View Projects
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                            </a>
+                            <a href="#contact" class="inline-flex items-center justify-center rounded-md border border-purple-400 bg-transparent px-4 py-2 text-sm font-medium text-purple-400 shadow transition-colors hover:bg-purple-400/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
+                                Contact Me
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </a>
+                        </div>
+                        <div class="flex gap-4">
+                            <a href="https://www.linkedin.com/in/joram-nyamawi-mwanyika-03b383282" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                            <a href="https://github.com/Joram-tech" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
                     </div>
-    
-                    <p>Lamu, Kenya</p>
-                </div>
-                <div class="contact-item">
-                    <div class="icon">
-                        <i class="fas fa-map-marker-alt"></i> Email
+                    <div class="relative aspect-square max-w-md mx-auto">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9621.jpg-c40qnjEdGLMdcQWtiEIItyswS3oWlP.jpeg" alt="Profile photo" class="rounded-full object-cover w-full h-full shadow-xl shadow-purple-900/20">
                     </div>
-    
-                    <a>jorammwanyika@gmail.com</a>
-                </div>
-                <div class="contact-item">
-                    <div class="icon">
-                        <i class="fa fa-phone" aria-hidden="true"></i> Number
-                    </div>
-    
-                    <p>+254759375015/+254794728645</p>
                 </div>
             </div>
+        </header>
 
-            <div class="footer_2">
-                <div class="socials">
-                    <a href="https://www.linkedin.com/in/joram-nyamawi-mwanyika-03b383282?trk=contact-info" target="_blank">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
-        
-                    </a>
-                    <a href="https://wa.me/+254759375015/" target="_blank">
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                    </a>
-                    <a href="https://www.instagram.com/captain_joram1st?igsh=YzljYTk1ODg3Zg==" target="_blank">
-                        <i class="fa fa-instagram" aria-hidden="true"></i>
-        
-                    </a>
+        <main class="container mx-auto px-4 py-8 space-y-16">
+            <section id="about">
+                <h2 class="text-3xl font-bold mb-8 text-purple-300">About Me</h2>
+                <div class="bg-gray-900 border-gray-800 rounded-lg p-6">
+                    <p class="text-gray-300 mb-6 leading-relaxed">
+                        I streamline business operations using no-code/low-code automation tools like Airtable, Zapier, and Make
+                        (formerly Integromat). Collaborating with diverse teams, I tailor automated processes to meet their unique
+                        needs through effective communication and teamwork. With technical expertise in HTML, CSS, JavaScript,
+                        Python (OOP), Flask, Excel, SQLAlchemy, and SQLite3, I ensure projects are efficient, accurate, and secure.
+                    </p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-purple-900 text-purple-100 px-2 py-1 rounded-md text-sm">No-code/Low-code Automation</span>
+                        <span class="bg-purple-900 text-purple-100 px-2 py-1 rounded-md text-sm">Customer Service</span>
+                        <span class="bg-purple-900 text-purple-100 px-2 py-1 rounded-md text-sm">Process Optimization</span>
+                        <span class="bg-purple-900 text-purple-100 px-2 py-1 rounded-md text-sm">Technical Documentation</span>
+                        <span class="bg-purple-900 text-purple-100 px-2 py-1 rounded-md text-sm">Team Collaboration</span>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
 
-    </footer>
-        
+            <section id="experience">
+                <h2 class="text-3xl font-bold mb-6 text-purple-300 border-b-2 border-purple-500 pb-2">Experience</h2>
+                <div class="space-y-6">
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300">Swahili Audio Transcriptionist</h3>
+                        <p class="text-gray-400">Dataforce | September 2024 – November 2024</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-300">
+                            <li>Transcribed Swahili audio recordings with high accuracy and attention to detail.</li>
+                            <li>Maintained strict confidentiality and adhered to project guidelines.</li>
+                            <li>Ensured timely delivery while meeting quality standards.</li>
+                            <li>Collaborated with the team to resolve inconsistencies and clarify ambiguities.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300">Automation Assistant</h3>
+                        <p class="text-gray-400">Kibo School, Remote | May 2024 - July 2024</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-300">
+                            <li>Utilized no-code/low-code automation tools to revolutionize business operations.</li>
+                            <li>Collaborated across diverse teams to address unique business challenges.</li>
+                            <li>Drove continuous process enhancements for efficiency and productivity.</li>
+                            <li>Crafted documentation for automated workflows and processes.</li>
+                            <li>Designed analytics dashboards using Google Sheets for data-driven decision-making.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300">NRF Hackathon Participant</h3>
+                        <p class="text-gray-400">May 2024 - June 2024</p>
+                        <p class="mt-2 text-gray-300">
+                            Gained skills in cybersecurity, network configuration, and software development using Django, Python, and
+                            React.js. Our innovation was based on Natural Language Processing.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300">Open Source Software Engineering Intern</h3>
+                        <p class="text-gray-400">FreeCodeCamp | April 2024 – June 2024</p>
+                        <p class="mt-2 text-gray-300">
+                            Worked under the guidance of David Walter to contribute to FreeCodeCamp, a charity site offering courses in
+                            computer science and technology.
+                        </p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300">Law Clerk (Customer Service and Support)</h3>
+                        <p class="text-gray-400">Orina & Company Advocates | April 2022 - August 2023</p>
+                        <ul class="list-disc list-inside mt-2 text-gray-300">
+                            <li>Developed a proofreading process for legal documents, reducing errors.</li>
+                            <li>Introduced standardized templates for legal documents.</li>
+                            <li>Trained new administrative staff, ensuring efficient office operations.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="animate-fadeIn">
+                <h2 class="text-3xl font-bold mb-8 text-purple-300">Featured Projects</h2>
+                <div class="space-y-12">
+                    <!-- Project 1 -->
+                    <div class="bg-gray-900 border-gray-800 rounded-lg overflow-hidden shadow-lg">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-purple-300 mb-4">Automated Patient Appointment Scheduling, Follow-Up and Feedback System</h3>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-purple-200 mb-2">Problem</h4>
+                                    <p class="text-gray-300 mb-4">Managing patient appointments manually can lead to scheduling conflicts, missed appointments, and administrative inefficiencies. Additionally, managing follow-ups and collecting patient feedback manually is time-consuming and prone to errors.</p>
+                                    <h4 class="text-xl font-semibold text-purple-200 mb-2">Solution</h4>
+                                    <p class="text-gray-300">I created an automated system that will handle appointment scheduling, follow-up communications, and patient feedback collection. This system will enhance efficiency and accuracy while providing a better solution for patient interaction management.</p>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="aspect-w-16 aspect-h-9">
+                                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vScfMTzE1HuLV5-Wxgw1yyaXTCcQjda8nvMqXdgwN8LDUsbVNoRPcV5PW7nm3ne3xTsW4eiROgdKUCI/embed?start=true&loop=true&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" class="w-full h-full"></iframe>
+                                    </div>
+                                    <div class="aspect-w-16 aspect-h-9">
+                                        <iframe src="https://www.youtube.com/embed/C2XsWDOzPCg?si=F1ZaFioSbfcZas-z" title="Project 1 Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (initially hidden) -->
+                    <div id="project2" class="bg-gray-900 border-gray-800 rounded-lg overflow-hidden shadow-lg hidden">
+                        <div class="p-6">
+                            <h3 class="text-2xl font-bold text-purple-300 mb-4">Addiction Solver App</h3>
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div>
+                                    <h4 class="text-xl font-semibold text-purple-200 mb-2">Problem</h4>
+                                    <p class="text-gray-300 mb-4">Addiction is a prevalent issue affecting many individuals worldwide, leading to various health, social, and economic problems. Traditional methods of addressing addiction often require significant resources, time, and personal interaction, which can be challenging for some individuals to access or maintain. There is a need for a convenient, accessible, and effective solution that can help individuals manage and overcome their addictions.</p>
+                                    <h4 class="text-xl font-semibold text-purple-200 mb-2">Solution</h4>
+                                    <p class="text-gray-300">An addiction solver app built using the Flask framework can provide a comprehensive and accessible platform to support individuals in managing their addictions. The app can offer features such as personalized progress tracking, educational resources, support community forums, and real-time notifications to encourage and guide users through their recovery journey.</p>
+                                </div>
+                                <div class="space-y-4">
+                                    <div class="aspect-w-16 aspect-h-9">
+                                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQQnK3aAMvChdKEfZzfByAsM5OZyim3o3a9T75XYQVvVXxaKUC4aZ2nMEtj01b_2a5TXMJ2AeyT3ZC-/embed?start=true&loop=true&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" class="w-full h-full"></iframe>
+                                    </div>
+                                    <div class="aspect-w-16 aspect-h-9">
+                                        <iframe src="https://www.youtube.com/embed/9sxwePMDj5U?si=xF3U7_5U3llIKE7j" title="Project 2 Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Next Project Button -->
+                    <div class="text-center">
+                        <button id="nextProjectBtn" class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
+                            Next Project
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2 class="text-3xl font-bold mb-6 text-purple-300 border-b-2 border-purple-500 pb-2">Education</h2>
+                <div class="space-y-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300">Kibo School of Technology</h3>
+                        <p class="text-gray-400">Diploma in Computer Science | June 2023 - July 2024</p>
+                        <p class="text-gray-300">New York, NY</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300">Moi University</h3>
+                        <p class="text-gray-400">Bachelor of Engineering in Electrical and Communication | August 2023 - Present</p>
+                        <p class="text-gray-300">Eldoret, Kenya</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300">Mpeketoni Boys High School</h3>
+                        <p class="text-gray-400">Jan 2018 - Apr 2021</p>
+                        <p class="text-gray-300">Grade: B+ | Lamu, Kenya</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2 class="text-3xl font-bold mb-6 text-purple-300 border-b-2 border-purple-500 pb-2">Skills & Additional Information</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">Technical Skills</h3>
+                        <p class="text-gray-300">Python, HTML, CSS, JavaScript, Flask, SQL</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">Tools</h3>
+                        <p class="text-gray-300">VSCode, Figma, PyCharm, Github</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">Certifications</h3>
+                        <p class="text-gray-300">Python (Programming Language), SQL</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">Other Skills</h3>
+                        <p class="text-gray-300">Problem solving, Verbal and written Communication, Critical thinking, Attention to details, Typing speed of 50 WPM</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">Languages</h3>
+                        <p class="text-gray-300">Swahili, English</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-300 mb-2">Interests</h3>
+                        <p class="text-gray-300">Basketball, Gaming, Coding</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2 class="text-3xl font-bold mb-8 text-purple-300">Get In Touch</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gray-900 border-gray-800 rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-purple-300 mb-4">Contact Information</h3>
+                        <p class="text-gray-400 mb-4">Feel free to reach out through any of these channels</p>
+                        <div class="space-y-2">
+                            <p class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
+                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
+                                </svg>
+                                <a href="mailto:jorammwanyika@gmail.com" class="text-gray-300 hover:text-purple-300">jorammwanyika@gmail.com</a>
+                            </p>
+                            <p class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
+                                </svg>
+                                <span class="text-gray-300">+254794728645 / +254759375015</span>
+                            </p>
+                            <p class="flex items-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-400" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                                </svg>
+                                <span class="text-gray-300">Eldoret, Kenya</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-gray-900 border-gray-800 rounded-lg p-6">
+                        <h3 class="text-xl font-bold text-purple-300 mb-4">Send a Message</h3>
+                        <form class="space-y-4">
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-400">Name</label>
+                                    <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-400">Email</label>
+                                    <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50">
+                                </div>
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-400">Message</label>
+                                <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition duration-300">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-900 text-white py-8 mt-16">
+            <div class="container mx-auto px-4 text-center">
+                <p>&copy; 2024 Joram Nyamawi Mwanyika. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
