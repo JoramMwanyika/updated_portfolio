@@ -10,13 +10,45 @@ document.addEventListener("DOMContentLoaded", (event) => {
   })
 
   // Form submission handling
-  const form = document.querySelector("form")
+  const form = document.getElementById("contactForm")
+  const submitButton = document.getElementById("submitButton")
+
   if (form) {
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault()
-      // Add form submission logic here
-      console.log("Form submitted")
-      // You can add AJAX call to submit the form data to a server
+      submitButton.disabled = true
+      submitButton.textContent = "Sending..."
+
+      const formData = new FormData(form)
+      const data = Object.fromEntries(formData.entries())
+
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            name: data.name,
+            email: data.email,
+            subject: data.subject,
+            message: data.message,
+          }),
+        })
+
+        if (response.ok) {
+          alert("Message sent successfully!")
+          form.reset()
+        } else {
+          throw new Error("Failed to send message")
+        }
+      } catch (error) {
+        console.error("Error:", error)
+        alert("Failed to send message. Please try again later.")
+      } finally {
+        submitButton.disabled = false
+        submitButton.textContent = "Send Message"
+      }
     })
   }
 
@@ -40,7 +72,5 @@ document.addEventListener("DOMContentLoaded", (event) => {
       showingProject1 = !showingProject1
     })
   }
-
-  // Add more JavaScript functionality as needed
 })
 

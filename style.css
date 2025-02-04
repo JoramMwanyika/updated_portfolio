@@ -20,7 +20,7 @@ body {
 
 /* Header/Hero section */
 header {
-  background: linear-gradient(to bottom, #4c1d95, #1f2937);
+  background: linear-gradient(to bottom, #170336, #041123);
   padding: 4rem 0;
 }
 
@@ -107,6 +107,9 @@ h3 {
   color: #e5e5e5;
   border-radius: 9999px;
   font-size: 0.875rem;
+  margin-right: 0.5e5;
+  border-radius: 9999px;
+  font-size: 0.875rem;
   margin-right: 0.5rem;
   margin-bottom: 0.5rem;
 }
@@ -121,14 +124,6 @@ textarea {
   border: 1px solid #4b5563;
   color: #e5e5e5;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-input:focus,
-Here 
-'s the continuation of the text stream from the cut-off point:
-
-transition: border-color 0.3s ease, box-shadow 0.3s ease
-;
 }
 
 input:focus,
