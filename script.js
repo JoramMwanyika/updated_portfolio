@@ -10,47 +10,47 @@ document.addEventListener("DOMContentLoaded", (event) => {
   })
 
   // Form submission handling
-  const form = document.getElementById("contactForm")
-  const submitButton = document.getElementById("submitButton")
+  // const form = document.getElementById("contactForm")
+  // const submitButton = document.getElementById("submitButton")
 
-  if (form) {
-    form.addEventListener("submit", async (e) => {
-      e.preventDefault()
-      submitButton.disabled = true
-      submitButton.textContent = "Sending..."
+  // if (form) {
+  //   form.addEventListener("submit", async (e) => {
+  //     e.preventDefault()
+  //     submitButton.disabled = true
+  //     submitButton.textContent = "Sending..."
 
-      const formData = new FormData(form)
-      const data = Object.fromEntries(formData.entries())
+  //     const formData = new FormData(form)
+  //     const data = Object.fromEntries(formData.entries())
 
-      try {
-        const response = await fetch("/api/contact", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            name: data.name,
-            email: data.email,
-            subject: data.subject,
-            message: data.message,
-          }),
-        })
+  //     try {
+  //       const response = await fetch("/api/contact", {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify({
+  //           name: data.name,
+  //           email: data.email,
+  //           subject: data.subject,
+  //           message: data.message,
+  //         }),
+  //       })
 
-        if (response.ok) {
-          alert("Message sent successfully!")
-          form.reset()
-        } else {
-          throw new Error("Failed to send message")
-        }
-      } catch (error) {
-        console.error("Error:", error)
-        alert("Failed to send message. Please try again later.")
-      } finally {
-        submitButton.disabled = false
-        submitButton.textContent = "Send Message"
-      }
-    })
-  }
+  //       if (response.ok) {
+  //         alert("Message sent successfully!")
+  //         form.reset()
+  //       } else {
+  //         throw new Error("Failed to send message")
+  //       }
+  //     } catch (error) {
+  //       console.error("Error:", error)
+  //       alert("Failed to send message. Please try again later.")
+  //     } finally {
+  //       submitButton.disabled = false
+  //       submitButton.textContent = "Send Message"
+  //     }
+  //   })
+  // }
 
   // Next Project button functionality
   const nextProjectBtn = document.getElementById("nextProjectBtn")
