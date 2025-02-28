@@ -10,47 +10,19 @@ document.addEventListener("DOMContentLoaded", (event) => {
   })
 
   // Form submission handling
-  // const form = document.getElementById("contactForm")
-  // const submitButton = document.getElementById("submitButton")
+  emailjs.init("C97oLWXQYg2Bm-1IP");
 
-  // if (form) {
-  //   form.addEventListener("submit", async (e) => {
-  //     e.preventDefault()
-  //     submitButton.disabled = true
-  //     submitButton.textContent = "Sending..."
+  document.getElementById("contactForm").addEventListener("submit", function (event) {
+      event.preventDefault();
 
-  //     const formData = new FormData(form)
-  //     const data = Object.fromEntries(formData.entries())
+      emailjs.sendForm("service_l7q3vtd", "template_4a0hmsx", this)
+      .then(() => {
+          alert("Message sent successfully!");
+          this.reset();
+      })
+      .catch(() => alert("Error sending message."));
+  });
 
-  //     try {
-  //       const response = await fetch("/api/contact", {
-  //         method: "POST",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify({
-  //           name: data.name,
-  //           email: data.email,
-  //           subject: data.subject,
-  //           message: data.message,
-  //         }),
-  //       })
-
-  //       if (response.ok) {
-  //         alert("Message sent successfully!")
-  //         form.reset()
-  //       } else {
-  //         throw new Error("Failed to send message")
-  //       }
-  //     } catch (error) {
-  //       console.error("Error:", error)
-  //       alert("Failed to send message. Please try again later.")
-  //     } finally {
-  //       submitButton.disabled = false
-  //       submitButton.textContent = "Send Message"
-  //     }
-  //   })
-  // }
 
   // Next Project button functionality
   const nextProjectBtn = document.getElementById("nextProjectBtn")
