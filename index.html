@@ -1,315 +1,606 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joram Mwanyika - Customer Service & Automation Specialist</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <title>Joram Mwanyika | Automation Specialist</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-950 text-gray-100">
-    <div class="min-h-screen">
-        <header class="bg-gradient-to-b from-purple-900 to-gray-950 py-16 md:py-24">
-            <div class="container mx-auto px-4">
-                <div class="grid md:grid-cols-2 gap-8 items-center">
-                    <div class="space-y-6">
-                        <h1 class="text-4xl md:text-5xl font-bold leading-tight">Hi, I'm Joram Mwanyika</h1>
-                        <p class="text-xl md:text-2xl text-purple-200">Customer Service & Automation Specialist</p>
-                        <p class="text-lg text-gray-300 max-w-lg">
-                            Streamlining business operations with no-code/low-code automation tools and technical expertise
-                        </p>
-                        <div class="flex gap-4">
-                            <a href="#projects" class="inline-flex items-center justify-center rounded-md bg-purple-600 px-4 py-2 text-sm font-medium text-white shadow transition-colors hover:bg-purple-700 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
-                                View Projects
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                            </a>
-                            <a href="#contact" class="inline-flex items-center justify-center rounded-md border border-purple-400 bg-transparent px-4 py-2 text-sm font-medium text-purple-400 shadow transition-colors hover:bg-purple-400/10 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring">
-                                Contact Me
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                            </a>
-                        </div>
-                        <div class="flex gap-4">
-                            <a href="https://www.linkedin.com/in/joram-nyamawi-mwanyika-03b383282" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                            </a>
-                            <a href="https://github.com/Joram-tech" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-                            </a>
-                        </div>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-text">JM</span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="mobile-menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+        <div class="mobile-menu-container">
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#experience" class="mobile-nav-link">Experience</a>
+            <a href="#projects" class="mobile-nav-link">Projects</a>
+            <a href="#skills" class="mobile-nav-link">Skills</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h4 class="subtitle" data-aos="fade-up" data-aos-delay="100">Hello, I'm</h4>
+                    <h1 class="title" data-aos="fade-up" data-aos-delay="200">Joram Mwanyika</h1>
+                    <h2 class="role" data-aos="fade-up" data-aos-delay="300">
+                        Customer Service & <span id="typing-text"></span>
+                    </h2>
+                    <p class="description" data-aos="fade-up" data-aos-delay="400">
+                        Streamlining business operations with no-code/low-code automation 
+                        tools and technical expertise
+                    </p>
+                    <div class="cta-buttons" data-aos="fade-up" data-aos-delay="500">
+                        <a href="#projects" class="btn btn-primary">
+                            View Projects <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me <i class="fas fa-envelope"></i>
+                        </a>
                     </div>
-                    <div class="relative aspect-square max-w-md mx-auto">
-                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9621.jpg-c40qnjEdGLMdcQWtiEIItyswS3oWlP.jpeg" alt="Profile photo" class="rounded-full object-cover w-full h-full shadow-xl shadow-purple-900/20">
+                    <div class="social-links" data-aos="fade-up" data-aos-delay="600">
+                        <a href="https://www.linkedin.com/in/joram-nyamawi-mwanyika-03b383282" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Joram-tech" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://wa.me/254794728645" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.instagram.com/joram_mwanyika" target="_blank" rel="noopener noreferrer" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="300">
+                    <div class="profile-container">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_9621.jpg-MD2aSBRprdcp20erAPZSHnfHCVJ7jc.jpeg" alt="Joram Mwanyika" class="profile-image">
+                        <div class="profile-blob"></div>
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </a>
+        </div>
+    </header>
 
-        <main class="container mx-auto px-4 py-8 space-y-16">
-            <section id="about">
-                <h2 class="text-3xl font-bold mb-8 text-purple-300">About Me</h2>
-                <div class="bg-gray-900 border-gray-800 rounded-lg p-6">
-                    <p class="text-gray-300 mb-6 leading-relaxed">
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h6 class="section-subtitle" data-aos="fade-up">About Me</h6>
+                    <h3 class="section-title" data-aos="fade-up" data-aos-delay="100">Who I Am</h3>
+                </div>
+                <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                    <p class="about-text">
                         I streamline business operations using no-code/low-code automation tools like Airtable, Zapier, and Make
                         (formerly Integromat). Collaborating with diverse teams, I tailor automated processes to meet their unique
                         needs through effective communication and teamwork. With technical expertise in HTML, CSS, JavaScript,
                         Python (OOP), Flask, Excel, SQLAlchemy, and SQLite3, I ensure projects are efficient, accurate, and secure.
                     </p>
-                    <div class="flex flex-wrap gap-2">
-                        <span class="bg-purple-900 text-purple-100 px-2 py-1 rounded-md text-sm">No-code/Low-code Automation</span>
-                        <span class="bg-purple-900 text-purple-100 px-2 py-1 rounded-md text-sm">Customer Service</span>
-                        <span class="bg-purple-900 text-purple-100 px-2 py-1 rounded-md text-sm">Process Optimization</span>
-                        <span class="bg-purple-900 text-purple-100 px-2 py-1 rounded-md text-sm">Technical Documentation</span>
-                        <span class="bg-purple-900 text-purple-100 px-2 py-1 rounded-md text-sm">Team Collaboration</span>
+                    <div class="key-skills">
+                        <div class="key-skill">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <h4>No-code/Low-code Automation</h4>
+                        </div>
+                        <div class="key-skill">
+                            <div class="skill-icon"><i class="fas fa-headset"></i></div>
+                            <h4>Customer Service</h4>
+                        </div>
+                        <div class="key-skill">
+                            <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+                            <h4>Process Optimization</h4>
+                        </div>
+                        <div class="key-skill">
+                            <div class="skill-icon"><i class="fas fa-file-alt"></i></div>
+                            <h4>Technical Documentation</h4>
+                        </div>
+                        <div class="key-skill">
+                            <div class="skill-icon"><i class="fas fa-users"></i></div>
+                            <h4>Team Collaboration</h4>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="experience">
-                <h2 class="text-3xl font-bold mb-6 text-purple-300 border-b-2 border-purple-500 pb-2">Experience</h2>
-                <div class="space-y-6">
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300">Swahili Audio Transcriptionist</h3>
-                        <p class="text-gray-400">Dataforce | September 2024 – November 2024</p>
-                        <ul class="list-disc list-inside mt-2 text-gray-300">
-                            <li>Transcribed Swahili audio recordings with high accuracy and attention to detail.</li>
-                            <li>Maintained strict confidentiality and adhered to project guidelines.</li>
-                            <li>Ensured timely delivery while meeting quality standards.</li>
-                            <li>Collaborated with the team to resolve inconsistencies and clarify ambiguities.</li>
-                        </ul>
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="container">
+                <div class="section-header">
+                    <h6 class="section-subtitle" data-aos="fade-up">My Journey</h6>
+                    <h3 class="section-title" data-aos="fade-up" data-aos-delay="100">Work Experience</h3>
+                </div>
+                <div class="experience-timeline" data-aos="fade-up" data-aos-delay="200">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="date">Sep 2024 - Nov 2024</div>
+                            <h4 class="timeline-title">Swahili Audio Transcriptionist</h4>
+                            <h5 class="timeline-org">Dataforce</h5>
+                            <div class="description">
+                                <ul>
+                                    <li>Transcribed Swahili audio recordings with high accuracy and attention to detail</li>
+                                    <li>Maintained strict confidentiality and adhered to project guidelines</li>
+                                    <li>Ensured timely delivery while meeting quality standards</li>
+                                    <li>Collaborated with the team to resolve inconsistencies and clarify ambiguities</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300">Automation Assistant</h3>
-                        <p class="text-gray-400">Kibo School, Remote | May 2024 - July 2024</p>
-                        <ul class="list-disc list-inside mt-2 text-gray-300">
-                            <li>Designed and implemented integrations using Zapier, Make (Integromat), and Google Sheets to automate workflows and improve efficiency.</li>
-                            <li>Developed data synchronization processes between multiple systems, ensuring seamless data flow.</li>
-                            <li>Collaborated with teams to optimize internal processes using low-code/no-code automation tools.
-                            </li>
-                            <li>Created dashboards and reports using Google Sheets and Airtable for data-driven decision-making.</li>
-                            <li>Maintained comprehensive documentation of automated workflows for scalability and knowledge sharing.</li>
-                            <li>Gained hands-on experience with NetSuite custom reports, dashboards, and saved searches, supporting data-driven decision-making.</li>
-                            <li>Built and maintained integrations between NetSuite, ClickUp, ActiveCampaign, and WooCommerce to enhance operational workflows.</li>
-                            <li>Developed custom NetSuite dashboards and saved searches to streamline financial and customer data tracking.</li>
-                            <li>Utilized Celigo to automate data flow across various CRM and accounting platforms.</li>
-                            <li>Implemented API-based solutions to integrate Google Workspace tools with business applications.</li>
-                            <li>Troubleshooting and optimized automation processes to improve reliability and performance.</li>
-                        </ul>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="date">May 2024 - Jul 2024</div>
+                            <h4 class="timeline-title">Automation Assistant</h4>
+                            <h5 class="timeline-org">Kibo School, Remote</h5>
+                            <div class="description">
+                                <ul>
+                                    <li>Designed and implemented integrations using Zapier, Make (Integromat), and Google Sheets to automate workflows</li>
+                                    <li>Developed data synchronization processes between multiple systems</li>
+                                    <li>Collaborated with teams to optimize internal processes using automation tools</li>
+                                    <li>Created dashboards and reports using Google Sheets and Airtable</li>
+                                    <li>Built integrations between NetSuite, ClickUp, ActiveCampaign, and WooCommerce</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300">NRF Hackathon Participant</h3>
-                        <p class="text-gray-400">May 2024 - June 2024</p>
-                        <p class="mt-2 text-gray-300">
-                            Gained skills in cybersecurity, network configuration, and software development using Django, Python, and
-                            React.js. Our innovation was based on Natural Language Processing.
-                        </p>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="date">May 2024 - Jun 2024</div>
+                            <h4 class="timeline-title">NRF Hackathon Participant</h4>
+                            <h5 class="timeline-org">National Research Foundation</h5>
+                            <div class="description">
+                                <p>Gained skills in cybersecurity, network configuration, and software development using Django, Python, and React.js. Our innovation was based on Natural Language Processing.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300">Open Source Software Engineering Intern</h3>
-                        <p class="text-gray-400">FreeCodeCamp | April 2024 – June 2024</p>
-                        <p class="mt-2 text-gray-300">
-                            Worked under the guidance of David Walter to contribute to FreeCodeCamp, a charity site offering courses in
-                            computer science and technology.
-                        </p>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="date">Apr 2024 - Jun 2024</div>
+                            <h4 class="timeline-title">Open Source Software Engineering Intern</h4>
+                            <h5 class="timeline-org">FreeCodeCamp</h5>
+                            <div class="description">
+                                <p>Worked under the guidance of David Walter to contribute to FreeCodeCamp, a charity site offering courses in computer science and technology.</p>
+                            </div>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300">Law Clerk (Customer Service and Support)</h3>
-                        <p class="text-gray-400">Orina & Company Advocates | April 2022 - August 2023</p>
-                        <ul class="list-disc list-inside mt-2 text-gray-300">
-                            <li>Developed a proofreading process for legal documents, reducing errors.</li>
-                            <li>Introduced standardized templates for legal documents.</li>
-                            <li>Trained new administrative staff, ensuring efficient office operations.</li>
-                        </ul>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="date">Apr 2022 - Aug 2023</div>
+                            <h4 class="timeline-title">Law Clerk (Customer Service and Support)</h4>
+                            <h5 class="timeline-org">Orina & Company Advocates</h5>
+                            <div class="description">
+                                <ul>
+                                    <li>Developed a proofreading process for legal documents, reducing errors</li>
+                                    <li>Introduced standardized templates for legal documents</li>
+                                    <li>Trained new administrative staff, ensuring efficient office operations</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="projects" class="animate-fadeIn">
-                <h2 class="text-3xl font-bold mb-8 text-purple-300">Featured Projects</h2>
-                <div class="space-y-12">
-                    <!-- Project 1 -->
-                    <div class="bg-gray-900 border-gray-800 rounded-lg overflow-hidden shadow-lg">
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold text-purple-300 mb-4">Automated Patient Appointment Scheduling, Follow-Up and Feedback System</h3>
-                            <div class="grid md:grid-cols-2 gap-6">
-                                <div>
-                                    <h4 class="text-xl font-semibold text-purple-200 mb-2">Problem</h4>
-                                    <p class="text-gray-300 mb-4">Managing patient appointments manually can lead to scheduling conflicts, missed appointments, and administrative inefficiencies. Additionally, managing follow-ups and collecting patient feedback manually is time-consuming and prone to errors.</p>
-                                    <h4 class="text-xl font-semibold text-purple-200 mb-2">Solution</h4>
-                                    <p class="text-gray-300">I created an automated system that will handle appointment scheduling, follow-up communications, and patient feedback collection. This system will enhance efficiency and accuracy while providing a better solution for patient interaction management.</p>
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h6 class="section-subtitle" data-aos="fade-up">My Work</h6>
+                    <h3 class="section-title" data-aos="fade-up" data-aos-delay="100">Featured Projects</h3>
+                </div>
+                
+                <div class="projects-wrapper">
+                    <div class="project-tabs" data-aos="fade-up" data-aos-delay="200">
+                        <button class="project-tab active" data-project="project1">Patient Appointment System</button>
+                        <button class="project-tab" data-project="project2">Addiction Solver App</button>
+                    </div>
+                    
+                    <div class="project-container" data-aos="fade-up" data-aos-delay="300">
+                        <div class="project-card active" id="project1">
+                            <div class="project-content">
+                                <div class="project-info">
+                                    <h4 class="project-title">Automated Patient Appointment System</h4>
+                                    <div class="project-details">
+                                        <div class="project-problem">
+                                            <h5><i class="fas fa-exclamation-triangle"></i> Problem</h5>
+                                            <p>Managing patient appointments manually can lead to scheduling conflicts, missed appointments, and administrative inefficiencies. Additionally, managing follow-ups and collecting patient feedback manually is time-consuming and prone to errors.</p>
+                                        </div>
+                                        <div class="project-solution">
+                                            <h5><i class="fas fa-lightbulb"></i> Solution</h5>
+                                            <p>I created an automated system that handles appointment scheduling, follow-up communications, and patient feedback collection. This system enhances efficiency and accuracy while providing a better solution for patient interaction management.</p>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span>Zapier</span>
+                                            <span>Airtable</span>
+                                            <span>Make</span>
+                                            <span>Google Forms</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="space-y-4">
-                                    <div class="aspect-w-16 aspect-h-9">
-                                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vScfMTzE1HuLV5-Wxgw1yyaXTCcQjda8nvMqXdgwN8LDUsbVNoRPcV5PW7nm3ne3xTsW4eiROgdKUCI/embed?start=true&loop=true&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" class="w-full h-full"></iframe>
+                                <div class="project-media">
+                                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vScfMTzE1HuLV5-Wxgw1yyaXTCcQjda8nvMqXdgwN8LDUsbVNoRPcV5PW7nm3ne3xTsW4eiROgdKUCI/embed?start=true&loop=true&delayms=3000" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="project-video">
+                                <iframe src="https://www.youtube.com/embed/C2XsWDOzPCg?si=F1ZaFioSbfcZas-z" title="Patient Appointment System Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        
+                        <div class="project-card" id="project2">
+                            <div class="project-content">
+                                <div class="project-info">
+                                    <h4 class="project-title">Addiction Solver App</h4>
+                                    <div class="project-details">
+                                        <div class="project-problem">
+                                            <h5><i class="fas fa-exclamation-triangle"></i> Problem</h5>
+                                            <p>Addiction is a prevalent issue affecting many individuals worldwide, leading to various health, social, and economic problems. Traditional methods of addressing addiction often require significant resources, time, and personal interaction, which can be challenging for some individuals to access or maintain.</p>
+                                        </div>
+                                        <div class="project-solution">
+                                            <h5><i class="fas fa-lightbulb"></i> Solution</h5>
+                                            <p>An addiction solver app built using the Flask framework provides a comprehensive and accessible platform to support individuals in managing their addictions. The app offers features such as personalized progress tracking, educational resources, support community forums, and real-time notifications.</p>
+                                        </div>
+                                        <div class="project-tech">
+                                            <span>Python</span>
+                                            <span>Flask</span>
+                                            <span>SQLite</span>
+                                            <span>HTML/CSS</span>
+                                            <span>JavaScript</span>
+                                        </div>
                                     </div>
-                                    <div class="aspect-w-16 aspect-h-9">
-                                        <iframe src="https://www.youtube.com/embed/C2XsWDOzPCg?si=F1ZaFioSbfcZas-z" title="Project 1 Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
-                                    </div>
+                                </div>
+                                <div class="project-media">
+                                    <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQQnK3aAMvChdKEfZzfByAsM5OZyim3o3a9T75XYQVvVXxaKUC4aZ2nMEtj01b_2a5TXMJ2AeyT3ZC-/embed?start=true&loop=true&delayms=3000" frameborder="0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="project-video">
+                                <iframe src="https://www.youtube.com/embed/9sxwePMDj5U?si=xF3U7_5U3llIKE7j" title="Addiction Solver App Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section education-section">
+            <div class="container">
+                <div class="section-header">
+                    <h6 class="section-subtitle" data-aos="fade-up">My Learning Path</h6>
+                    <h3 class="section-title" data-aos="fade-up" data-aos-delay="100">Education</h3>
+                </div>
+                <div class="education-cards" data-aos="fade-up" data-aos-delay="200">
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h4 class="edu-title">Kibo School of Technology</h4>
+                            <p class="edu-degree">Diploma in Computer Science</p>
+                            <p class="edu-date">June 2023 - July 2024</p>
+                            <p class="edu-location">New York, NY</p>
+                        </div>
+                    </div>
+                    
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h4 class="edu-title">Moi University</h4>
+                            <p class="edu-degree">Bachelor of Engineering in Electrical and Communication</p>
+                            <p class="edu-date">August 2023 - Present</p>
+                            <p class="edu-location">Eldoret, Kenya</p>
+                        </div>
+                    </div>
+                    
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="edu-content">
+                            <h4 class="edu-title">Mpeketoni Boys High School</h4>
+                            <p class="edu-degree">High School Diploma</p>
+                            <p class="edu-date">Jan 2018 - Apr 2021</p>
+                            <p class="edu-location">Grade: B+ | Lamu, Kenya</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h6 class="section-subtitle" data-aos="fade-up">My Expertise</h6>
+                    <h3 class="section-title" data-aos="fade-up" data-aos-delay="100">Skills & Information</h3>
+                </div>
+                <div class="skills-grid" data-aos="fade-up" data-aos-delay="200">
+                    <div class="skill-group">
+                        <h4 class="group-title"><i class="fas fa-code"></i> Technical Skills</h4>
+                        <div class="skill-bars">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h5>Python</h5>
+                                    <span>85%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h5>HTML/CSS</h5>
+                                    <span>80%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h5>JavaScript</h5>
+                                    <span>70%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="70"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h5>Flask</h5>
+                                    <span>75%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <h5>SQL</h5>
+                                    <span>65%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-progress="65"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="info-grid">
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-tools"></i></div>
+                            <h4>Tools</h4>
+                            <div class="info-content">
+                                <span>VSCode</span>
+                                <span>Figma</span>
+                                <span>PyCharm</span>
+                                <span>Github</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-certificate"></i></div>
+                            <h4>Certifications</h4>
+                            <div class="info-content">
+                                <span>Python Programming</span>
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-brain"></i></div>
+                            <h4>Other Skills</h4>
+                            <div class="info-content">
+                                <span>Problem Solving</span>
+                                <span>Communication</span>
+                                <span>Critical Thinking</span>
+                                <span>Typing Speed: 50 WPM</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-language"></i></div>
+                            <h4>Languages</h4>
+                            <div class="info-content">
+                                <span>Swahili</span>
+                                <span>English</span>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <div class="info-icon"><i class="fas fa-heart"></i></div>
+                            <h4>Interests</h4>
+                            <div class="info-content">
+                                <span>Basketball</span>
+                                <span>Gaming</span>
+                                <span>Coding</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <!-- Project 2 (initially hidden) -->
-                    <div id="project2" class="bg-gray-900 border-gray-800 rounded-lg overflow-hidden shadow-lg hidden">
-                        <div class="p-6">
-                            <h3 class="text-2xl font-bold text-purple-300 mb-4">Addiction Solver App</h3>
-                            <div class="grid md:grid-cols-2 gap-6">
-                                <div>
-                                    <h4 class="text-xl font-semibold text-purple-200 mb-2">Problem</h4>
-                                    <p class="text-gray-300 mb-4">Addiction is a prevalent issue affecting many individuals worldwide, leading to various health, social, and economic problems. Traditional methods of addressing addiction often require significant resources, time, and personal interaction, which can be challenging for some individuals to access or maintain. There is a need for a convenient, accessible, and effective solution that can help individuals manage and overcome their addictions.</p>
-                                    <h4 class="text-xl font-semibold text-purple-200 mb-2">Solution</h4>
-                                    <p class="text-gray-300">An addiction solver app built using the Flask framework can provide a comprehensive and accessible platform to support individuals in managing their addictions. The app can offer features such as personalized progress tracking, educational resources, support community forums, and real-time notifications to encourage and guide users through their recovery journey.</p>
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h6 class="section-subtitle" data-aos="fade-up">Get In Touch</h6>
+                    <h3 class="section-title" data-aos="fade-up" data-aos-delay="100">Contact Me</h3>
+                </div>
+                <div class="contact-container" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info">
+                        <h4>Contact Information</h4>
+                        <p class="contact-desc">Feel free to reach out through any of these channels</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-envelope"></i>
                                 </div>
-                                <div class="space-y-4">
-                                    <div class="aspect-w-16 aspect-h-9">
-                                        <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQQnK3aAMvChdKEfZzfByAsM5OZyim3o3a9T75XYQVvVXxaKUC4aZ2nMEtj01b_2a5TXMJ2AeyT3ZC-/embed?start=true&loop=true&delayms=3000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" class="w-full h-full"></iframe>
-                                    </div>
-                                    <div class="aspect-w-16 aspect-h-9">
-                                        <iframe src="https://www.youtube.com/embed/9sxwePMDj5U?si=xF3U7_5U3llIKE7j" title="Project 2 Demo" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="w-full h-full"></iframe>
-                                    </div>
+                                <div class="method-content">
+                                    <h5>Email</h5>
+                                    <a href="mailto:jorammwanyika@gmail.com">jorammwanyika@gmail.com</a>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h5>Phone</h5>
+                                    <p>+254794728645 / +254759375015</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h5>Location</h5>
+                                    <p>Eldoret, Kenya</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="method-icon">
+                                    <i class="fab fa-whatsapp"></i>
+                                </div>
+                                <div class="method-content">
+                                    <h5>WhatsApp</h5>
+                                    <a href="https://wa.me/254794728645" target="_blank" rel="noopener noreferrer">Send a message</a>
                                 </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Next Project Button -->
-                    <div class="text-center">
-                        <button id="nextProjectBtn" class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50">
-                            Next Project
-                        </button>
-                    </div>
-                </div>
-            </section>
-
-            <section id="education">
-                <h2 class="text-3xl font-bold mb-6 text-purple-300 border-b-2 border-purple-500 pb-2">Education</h2>
-                <div class="space-y-4">
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300">Kibo School of Technology</h3>
-                        <p class="text-gray-400">Diploma in Computer Science | June 2023 - July 2024</p>
-                        <p class="text-gray-300">New York, NY</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300">Moi University</h3>
-                        <p class="text-gray-400">Bachelor of Engineering in Electrical and Communication | August 2023 - Present</p>
-                        <p class="text-gray-300">Eldoret, Kenya</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300">Mpeketoni Boys High School</h3>
-                        <p class="text-gray-400">Jan 2018 - Apr 2021</p>
-                        <p class="text-gray-300">Grade: B+ | Lamu, Kenya</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="skills">
-                <h2 class="text-3xl font-bold mb-6 text-purple-300 border-b-2 border-purple-500 pb-2">Skills & Additional Information</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300 mb-2">Technical Skills</h3>
-                        <p class="text-gray-300">Python, HTML, CSS, JavaScript, Flask, SQL</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300 mb-2">Tools</h3>
-                        <p class="text-gray-300">VSCode, Figma, PyCharm, Github</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300 mb-2">Certifications</h3>
-                        <p class="text-gray-300">Python (Programming Language), SQL</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300 mb-2">Other Skills</h3>
-                        <p class="text-gray-300">Problem solving, Verbal and written Communication, Critical thinking, Attention to details, Typing speed of 50 WPM</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300 mb-2">Languages</h3>
-                        <p class="text-gray-300">Swahili, English</p>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-bold text-purple-300 mb-2">Interests</h3>
-                        <p class="text-gray-300">Basketball, Gaming, Coding</p>
-                    </div>
-                </div>
-            </section>
-
-            <section id="contact">
-                <h2 class="text-3xl font-bold mb-8 text-purple-300">Get In Touch</h2>
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="bg-gray-900 border-gray-800 rounded-lg p-6">
-                        <h3 class="text-xl font-bold text-purple-300 mb-4">Contact Information</h3>
-                        <p class="text-gray-400 mb-4">Feel free to reach out through any of these channels</p>
-                        <div class="space-y-2">
-                            <p class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-400" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                                </svg>
-                                <a href="mailto:jorammwanyika@gmail.com" class="text-gray-300 hover:text-purple-300">jorammwanyika@gmail.com</a>
-                            </p>
-                            <p class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-400" viewBox="0 0 20 20" fill="currentColor">
-                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                                </svg>
-                                <span class="text-gray-300">+254794728645 / +254759375015</span>
-                            </p>
-                            <p class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-400" viewBox="0 0 20 20" fill="currentColor">
-                                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
-                                </svg>
-                                <span class="text-gray-300">Eldoret, Kenya</span>
-                            </p>
-                            <p class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-400" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
-                                    <path d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm7 12.5c1.38 0 2.5-1.12 2.5-2.5S13.38 10.5 12 10.5 9.5 11.62 9.5 13s1.12 2.5 2.5 2.5z"/>
-                                </svg>
-                                <a href="https://wa.me/254794728645" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-purple-300">WhatsApp</a>
-                            </p>
-                            <p class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-purple-400" viewBox="0 0 24 24" fill="currentColor">
-                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                                </svg>
-                                <a href="https://www.instagram.com/joram_mwanyika" target="_blank" rel="noopener noreferrer" class="text-gray-300 hover:text-purple-300">Instagram</a>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bg-gray-900 border-gray-800 rounded-lg p-6">
-                        <h3 class="text-xl font-bold text-purple-300 mb-4">Send a Message</h3>
-                        <form action="https://formsubmit.co/jorammwanyika@gmail.com" method="POST">
-                            <div class="grid grid-cols-2 gap-4">
-                                <div>
-                                    <label for="name" class="block text-sm font-medium text-gray-400">Name</label>
-                                <input type="text" id="name" name="name" placeholder="Full Name" class="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50" required>
-                            </div>
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-400">Email</label>
-                                <input type="email" id="email" name="email" placeholder="Email" class="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50" required>
+                        
+                        <div class="contact-social">
+                            <h5>Connect with me</h5>
+                            <div class="social-icons">
+                                <a href="https://www.linkedin.com/in/joram-nyamawi-mwanyika-03b383282" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="https://github.com/Joram-tech" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.instagram.com/joram_mwanyika" target="_blank" rel="noopener noreferrer" class="social-icon">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
                             </div>
                         </div>
-                        <div>
-                            <label for="subject" class="block text-sm font-medium text-gray-400">Subject</label>
-                            <input type="text" id="subject" name="subject" placeholder="subject" class="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50" required>
-                        </div>
-                        <div>
-                            <label for="message" class="block text-sm font-medium text-gray-400">Message</label>
-                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md bg-gray-800 border-gray-700 text-gray-300 focus:border-purple-500 focus:ring focus:ring-purple-500 focus:ring-opacity-50" required></textarea>
-                        </div>
-                        <button type="submit" id="submitButton" class="w-full bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-opacity-50 transition duration-300">Send Message</button>
-                    </form>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="name" placeholder="Your full name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="Your email address" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Message subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+                            </div>
+                            <button type="submit" id="submitButton" class="btn btn-primary">
+                                Send Message <i class="fas fa-paper-plane"></i>
+                            </button>
+                            <div id="formStatus" class="form-status"></div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="bg-gray-900 text-white py-8 mt-16">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; 2024 Joram Nyamawi Mwanyika. All rights reserved.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="copyright">
+                    <p>&copy; 2024 Joram Nyamawi Mwanyika. All rights reserved.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
         </div>
     </footer>
-</div>
 
-<script src="script.js"></script>
-<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <!-- Back to top button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
 
