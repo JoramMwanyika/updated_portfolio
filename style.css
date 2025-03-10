@@ -115,6 +115,7 @@ button {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  touch-action: manipulation;
 }
 
 .btn i {
@@ -295,6 +296,7 @@ button {
   transition: var(--transition);
 }
 
+/* Mobile Menu Improvements */
 .mobile-menu {
   display: none;
   position: fixed;
@@ -320,7 +322,8 @@ button {
 .mobile-menu-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
+  padding: 10px 0;
 }
 
 .mobile-nav-link {
@@ -328,13 +331,24 @@ button {
   font-weight: 500;
   color: var(--text-light);
   transition: var(--transition);
-  padding: 10px;
-  border-radius: 5px;
+  padding: 12px 15px;
+  border-radius: 8px;
+  display: block;
+  text-align: center;
 }
 
 .mobile-nav-link:hover {
   background-color: var(--bg-card);
   color: var(--primary-light);
+}
+
+.mobile-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+  padding-top: 15px;
+  border-top: 1px solid var(--border-color);
 }
 
 .theme-toggle {
@@ -368,6 +382,7 @@ button {
 }
 
 /* Hero Section */
+/* Improved Hero Section Responsiveness */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -444,6 +459,7 @@ button {
   }
 }
 
+/* Improved Hero Section Responsiveness */
 .hero-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -721,6 +737,13 @@ button {
 }
 
 /* Experience Section */
+/* Improved Timeline */
+.timeline-item {
+  position: relative;
+  padding-left: 60px;
+  margin-bottom: 50px;
+}
+
 .experience-timeline {
   max-width: 800px;
   margin: 0 auto;
@@ -735,12 +758,6 @@ button {
   width: 2px;
   height: 100%;
   background: linear-gradient(to bottom, var(--primary) 0%, var(--primary-light) 100%);
-}
-
-.timeline-item {
-  position: relative;
-  padding-left: 60px;
-  margin-bottom: 50px;
 }
 
 .timeline-item:last-child {
@@ -882,6 +899,7 @@ button {
   opacity: 1;
 }
 
+/* Improved Project Cards */
 .project-content {
   background-color: var(--bg-card);
   border-radius: var(--border-radius);
@@ -1063,6 +1081,7 @@ button {
 }
 
 /* Skills Section */
+/* Improved Skills Grid */
 .skills-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1335,8 +1354,10 @@ button {
   color: var(--text-light);
 }
 
+/* Improved Form Responsiveness */
 .form-group input,
 .form-group textarea {
+  width: 100%;
   background-color: var(--bg-dark);
   border: 1px solid var(--border-color);
   border-radius: 8px;
@@ -1505,6 +1526,10 @@ button {
 }
 
 @media (max-width: 768px) {
+  .section {
+    padding: 70px 0;
+  }
+
   .section-title {
     font-size: 30px;
   }
@@ -1532,6 +1557,22 @@ button {
   .form-row {
     grid-template-columns: 1fr;
   }
+
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+  }
+
+  .timeline-title {
+    font-size: 18px;
+  }
+
+  .key-skill {
+    width: 160px;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1539,8 +1580,32 @@ button {
     padding: 60px 0;
   }
 
+  .container {
+    padding: 0 15px;
+  }
+
   .hero .title {
     font-size: 32px;
+  }
+
+  .hero .subtitle {
+    font-size: 16px;
+  }
+
+  .hero .description {
+    font-size: 15px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto 30px;
+  }
+
+  .btn {
+    width: 100%;
   }
 
   .profile-container {
@@ -1566,6 +1631,65 @@ button {
   .project-tabs {
     flex-direction: column;
     align-items: center;
+    gap: 10px;
+  }
+
+  .project-tab {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .project-content {
+    padding: 20px;
+  }
+
+  .project-title {
+    font-size: 20px;
+  }
+
+  .project-problem h5,
+  .project-solution h5 {
+    font-size: 16px;
+  }
+
+  .timeline-item {
+    padding-left: 40px;
+    margin-bottom: 40px;
+  }
+
+  .timeline-content {
+    padding: 15px;
+  }
+
+  .timeline-title {
+    font-size: 16px;
+  }
+
+  .timeline-org {
+    font-size: 14px;
+  }
+
+  .timeline-content .description {
+    font-size: 14px;
+  }
+
+  .contact-info,
+  .contact-form-wrapper {
+    padding: 20px;
+  }
+
+  .contact-info h4 {
+    font-size: 20px;
+  }
+
+  .method-content h5 {
+    font-size: 15px;
+  }
+
+  .method-content p,
+  .method-content a {
+    font-size: 14px;
   }
 
   .back-to-top {
@@ -1574,6 +1698,187 @@ button {
     width: 40px;
     height: 40px;
     font-size: 16px;
+  }
+
+  /* Add these styles to improve form responsiveness on mobile */
+  .form-group input,
+  .form-group textarea {
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+
+  .contact-form .btn {
+    width: 100%;
+  }
+
+  .contact-info h4,
+  .contact-form-wrapper h4 {
+    font-size: 22px;
+  }
+
+  .contact-desc {
+    font-size: 15px;
+  }
+
+  /* Fix for project media on small screens */
+  .project-media {
+    height: 200px;
+  }
+
+  .project-video {
+    margin-top: 20px;
+  }
+
+  /* Improve skill bars on mobile */
+  .skill-bars {
+    gap: 15px;
+  }
+
+  .skill-header h5 {
+    font-size: 15px;
+  }
+
+  .skill-bar {
+    height: 6px;
+  }
+
+  /* Fix for footer on small screens */
+  .footer {
+    padding: 40px 0;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  /* Fix for education cards on small screens */
+  .education-cards {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .section-title {
+    font-size: 26px;
+  }
+
+  .hero .title {
+    font-size: 28px;
+  }
+
+  .hero .role {
+    font-size: 18px;
+  }
+
+  .profile-container {
+    width: 220px;
+    height: 220px;
+  }
+
+  .key-skills {
+    justify-content: center;
+  }
+
+  .key-skill {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* Improve touch targets for mobile */
+@media (max-width: 768px) {
+  .btn {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  .social-link {
+    width: 45px;
+    height: 45px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 14px;
+    font-size: 16px;
+  }
+
+  .mobile-nav-link {
+    padding: 15px;
+    margin-bottom: 5px;
+  }
+
+  .theme-toggle {
+    width: 45px;
+    height: 45px;
+  }
+
+  .mobile-menu-button {
+    width: 35px;
+    height: 25px;
+  }
+}
+
+/* Fix for very small screens */
+@media (max-width: 320px) {
+  .hero .title {
+    font-size: 24px;
+  }
+
+  .profile-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .key-skills {
+    justify-content: center;
+  }
+
+  .key-skill {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+/* Improve tablet experience */
+@media (min-width: 768px) and (max-width: 992px) {
+  .hero-content {
+    gap: 30px;
+  }
+
+  .profile-container {
+    width: 350px;
+    height: 350px;
+  }
+
+  .info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .project-content {
+    padding: 25px;
+  }
+}
+
+/* Landscape mode fixes */
+@media (max-height: 600px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: 120px 0 60px;
+  }
+
+  .profile-container {
+    width: 200px;
+    height: 200px;
+  }
+
+  .scroll-indicator {
+    display: none;
   }
 }
 
@@ -1612,6 +1917,22 @@ button {
 @keyframes blink {
   50% {
     border-color: transparent;
+  }
+}
+
+/* Fix for hero section on very tall screens */
+@media (min-height: 1000px) {
+  .hero {
+    height: 100vh;
+    min-height: 700px;
+  }
+}
+
+/* Fix for hero section on very short screens */
+@media (max-height: 700px) {
+  .hero {
+    min-height: auto;
+    padding: 120px 0 80px;
   }
 }
 

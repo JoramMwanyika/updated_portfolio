@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Typing effect for hero section
   const typingText = document.getElementById("typing-text")
-  const words = ["Automation Specialist", "Web Developer", "Problem Solver"]
+  const words = ["Customer Service & Support", "Web Developer", "Problem Solver"]
   let wordIndex = 0
   let charIndex = 0
   let isDeleting = false
@@ -130,6 +130,22 @@ document.addEventListener("DOMContentLoaded", () => {
         mobileMenuButton.querySelector("span:nth-child(3)").style.transform = "none"
       })
     })
+
+    // Close mobile menu when clicking outside
+    document.addEventListener("click", (event) => {
+      if (
+        mobileMenu.classList.contains("active") &&
+        !mobileMenu.contains(event.target) &&
+        !mobileMenuButton.contains(event.target)
+      ) {
+        mobileMenu.classList.remove("active")
+        document.body.classList.remove("menu-open")
+        mobileMenuButton.classList.remove("active")
+        mobileMenuButton.querySelector("span:nth-child(1)").style.transform = "none"
+        mobileMenuButton.querySelector("span:nth-child(2)").style.opacity = "1"
+        mobileMenuButton.querySelector("span:nth-child(3)").style.transform = "none"
+      }
+    })
   }
 
   // Smooth scrolling for navigation links
@@ -141,7 +157,8 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetElement = document.querySelector(targetId)
 
       if (targetElement) {
-        const headerOffset = 80
+        // Adjust header offset based on screen size
+        const headerOffset = window.innerWidth <= 768 ? 70 : 80
         const elementPosition = targetElement.getBoundingClientRect().top
         const offsetPosition = elementPosition + window.pageYOffset - headerOffset
 
@@ -247,5 +264,20 @@ document.addEventListener("DOMContentLoaded", () => {
         })
     })
   }
+
+  // Add resize handler for better responsiveness
+  window.addEventListener("resize", () => {
+    // Reset mobile menu when resizing to desktop
+    if (window.innerWidth > 992 && mobileMenu && mobileMenu.classList.contains("active")) {
+      mobileMenu.classList.remove("active")
+      document.body.classList.remove("menu-open")
+      if (mobileMenuButton) {
+        mobileMenuButton.classList.remove("active")
+        mobileMenuButton.querySelector("span:nth-child(1)").style.transform = "none"
+        mobileMenuButton.querySelector("span:nth-child(2)").style.opacity = "1"
+        mobileMenuButton.querySelector("span:nth-child(3)").style.transform = "none"
+      }
+    }
+  })
 })
 
